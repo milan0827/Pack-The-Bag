@@ -101,7 +101,7 @@ function TripItemInput({ items, setItems, onAddItems }) {
 function TripItem({ items, onDeleteItems, onHandlePackedItems, itemsNumber }) {
   return (
     <>
-      {itemsNumber === 0 && <h2>Let's pack the item!!!</h2>}
+      {itemsNumber === 0 && <h2>Let's Pack The Bag!!!</h2>}
       <ul className="tripItem flex">
         {items.map((item) => (
           <TripItemList
