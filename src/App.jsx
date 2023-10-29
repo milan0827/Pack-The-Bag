@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 
-const defaultItems = [
-  { id: 1, itemName: "brush", noOfItem: 5, packed: true },
-  { id: 2, itemName: "sun glass", noOfItem: 2, packed: false },
-];
+// const defaultItems = [
+//   { id: 1, itemName: "brush", noOfItem: 5, packed: true },
+//   { id: 2, itemName: "sun glass", noOfItem: 2, packed: false },
+// ];
 
 function App() {
   const [items, setItems] = useState([]);
