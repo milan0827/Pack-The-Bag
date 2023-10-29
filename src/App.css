@@ -1,0 +1,96 @@
+:root {
+  --grey-color: #686868;
+  --light-grey-color: hsl(0, 0%, 88%);
+  --white-color: #fbfbfa;
+  --blue-color: #3b40d5;
+  --dark-grey-color: #343434;
+  --black-color: #1d1d1d;
+  --pink-color: #ec90b9;
+}
+
+h1 {
+  display: block;
+  padding-bottom: 1rem;
+  color: var(--pink-color);
+  border-bottom: 4px solid var(--pink-color);
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+}
+
+.app-container {
+  border: 2px solid var(--grey-color);
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  flex-direction: column;
+  gap: 4rem;
+  width: 65rem;
+  padding: 2rem;
+  background-color: var(--white-color);
+}
+
+.tripItemInput {
+  gap: 2rem;
+}
+
+.tripItemInput select {
+  padding: 1rem;
+  border: 1px solid var(--pink-color);
+  background-color: var(--white-color);
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  outline: none;
+}
+
+.tripItemInput input {
+  border: 1px solid var(--pink-color);
+  padding: 1rem;
+  outline: none;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: var(--pink-color);
+  border: none;
+  color: var(--white-color);
+}
+
+.tripItem {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+  height: 12rem;
+  overflow: scroll;
+}
+
+.tripItemList {
+  gap: 0.5rem;
+}
+
+.tripItemList button {
+  background-color: transparent;
+  border: none;
+  font-size: 3.5rem;
+  color: red;
+  cursor: pointer;
+}
+
+.cross-line {
+  text-decoration: line-through;
+  color: green;
+}
