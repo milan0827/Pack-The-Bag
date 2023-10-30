@@ -33,7 +33,7 @@ h1 {
   border-bottom-left-radius: 3rem;
   flex-direction: column;
   gap: 4rem;
-  width: 65rem;
+  width: 60%;
   padding: 2rem;
   background-color: var(--white-color);
 }
@@ -43,6 +43,7 @@ h1 {
 }
 
 .tripItemInput select {
+  font-family: "Playpen Sans", cursive;
   padding: 1rem;
   border: 1px solid var(--pink-color);
   background-color: var(--white-color);
@@ -52,11 +53,16 @@ h1 {
 }
 
 .tripItemInput input {
+  font-family: "Playpen Sans", cursive;
   border: 1px solid var(--pink-color);
   padding: 1rem;
   outline: none;
   border-top-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+}
+
+.tripItemInput .flex {
+  gap: 1rem;
 }
 
 .btn {
@@ -93,4 +99,40 @@ h1 {
 .cross-line {
   text-decoration: line-through;
   color: green;
+}
+
+@media only screen and (max-width: 1000px) {
+  .app-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tripItemInput {
+    flex-direction: column;
+    text-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .app-container {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .app {
+    margin-top: 10rem;
+    align-items: flex-start;
+    font-size: 1.2rem;
+  }
+
+  .app-container {
+    padding: 0.5rem;
+  }
 }

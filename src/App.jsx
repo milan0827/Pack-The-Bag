@@ -77,23 +77,27 @@ function TripItemInput({ items, setItems, onAddItems }) {
 
   return (
     <form className="tripItemInput flex" onSubmit={handleSubmit}>
-      <p>What do you need for your trip?</p>
-      <select onChange={(e) => setNoOfItem(+e.target.value)} value={noOfItem}>
-        {Array.from({ length: 25 }, (_, index) => index + 1).map((n) => (
-          <option value={n} key={n}>
-            {n}
-          </option>
-        ))}
-      </select>
-      <input
-        type="text"
-        placeholder="item..."
-        value={itemName}
-        onChange={(e) => {
-          setItemName(e.target.value);
-        }}
-      />
-      <button className="btn">Add</button>
+      <div className="flex">
+        <p>What do you need for your trip?</p>
+        <select onChange={(e) => setNoOfItem(+e.target.value)} value={noOfItem}>
+          {Array.from({ length: 25 }, (_, index) => index + 1).map((n) => (
+            <option value={n} key={n}>
+              {n}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="flex">
+        <input
+          type="text"
+          placeholder="item..."
+          value={itemName}
+          onChange={(e) => {
+            setItemName(e.target.value);
+          }}
+        />
+        <button className="btn">Add</button>
+      </div>
     </form>
   );
 }
